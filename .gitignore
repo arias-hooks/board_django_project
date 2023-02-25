@@ -1,2 +1,5 @@
 venv
 board_project/__pycache__
+board/__pycache__
+board/migrations/__pycache__
+media/*

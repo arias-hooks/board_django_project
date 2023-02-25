@@ -118,7 +118,18 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# 本番環境では、静的ファイルを1つにまとめるので、その設定をする
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_DIRS = [str(BASE_DIR / 'static')]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = BASE_DIR / 'media'
+
+MEDIA_URL = 'media/'
+
+LOGIN_URL = 'login'
